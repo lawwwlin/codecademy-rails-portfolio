@@ -94,14 +94,17 @@ a {
 }
 
 .main {
-  background: url(https://content.codecademy.com/projects/innovation-cloud/bg.jpg) no-repeat center center; 
+  background-color: white;
   background-size: cover;
   height: 40vh;
   text-align: center;
-  color: #fff;
+  color: black;
+  font-weight: 500;
 }
 
 .main .container {
+  position: relative;
+  top: 100px;
   margin: 80px auto;
 }
 
@@ -109,6 +112,49 @@ a {
   float: left;
   margin: 50px 80px 50px 0;
 }
+
+.projects {
+  .header {
+    background: url(https://content.codecademy.com/projects/innovation-cloud/bg.jpg) no-repeat center center; 
+    background-size: cover;
+    height: 40vh;
+    text-align: center; 
+  }
+  
+  .header .container {
+    position: relative;
+    top: 100px;
+  }
+  
+  .header h1 {
+    color: #fff;
+    font-size: 80px;  
+    line-height: 100px; 
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase; 
+  }
+  
+  @media (max-width: 850px) {
+    .header h1 {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+  
+  .header p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+  }
+}
+
+
+
+
 
 .footer { 
   background: black;
@@ -125,21 +171,6 @@ a {
   line-height: 80px;
   margin: 0;
   text-align: right;
-}
-
-.jumbotron form {
-  text-align: right;
-}
-
-.jumbotron input[type=submit] {
-  border: none;
-  margin: 0
-}
-
-.jumbotron input[type=text] {
-  height: 23px;
-  width: 210px;
-  font-size: 14px;
 }
 
 /* Grid */
