@@ -17,6 +17,29 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li> <%= link_to 'Welcome', '/' %> </li>
+          <li> <%= link_to 'Portfolio', '/portfolio' %> </li>
+          <li>Blog</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      </div>
+      
+      <%= yield %>
+
+    <div class="footer">
+      <div class="container">
+        <p>
+        <a href='https://github.com/lawwwlin' target='_blank'><i class="fab fa-github"></i></a>
+        <a href='https://www.linkedin.com/in/lawrence-lin-vancouver/' target='_blank'><i class="fab fa-linkedin"></i></a>
+        &nbsp &copy; Lawrence Lin 2021</p>
+      </div>
+    </div>
+
   </body>
 </html>
