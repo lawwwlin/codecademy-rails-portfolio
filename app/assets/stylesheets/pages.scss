@@ -8,6 +8,8 @@ html, body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
@@ -104,6 +106,7 @@ a {
   font-weight: 500;
 }
 
+.about,
 .projects {
   .header {
     background: url(https://content.codecademy.com/projects/innovation-cloud/bg.jpg) no-repeat center center; 
@@ -151,6 +154,10 @@ a {
   vertical-align: middle;
 }
 
+.about .main {
+  min-height: 50vh; 
+}
+
 .main img {
   float: left;
   width: 400px;
@@ -164,12 +171,28 @@ a {
 }
 
 // project image
-.image {
+.project .image {
   background-color: transparent;
   border: 0;
   border-radius: 0;
   padding: 0;
   height: 350px;
+}
+
+.about-text {
+  padding: 0 2em;
+  ul {
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  ul li::before {
+    content: "\2022";
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
 }
 
 .footer { 
@@ -179,12 +202,10 @@ a {
   color: white;
   font-size: 25px;
   bottom: 0;
+  left: 0;
 }
 
 .footer p { 
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
   height: 80px; 
   line-height: 80px;
   margin: 0;
