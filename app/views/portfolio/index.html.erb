@@ -6,8 +6,17 @@
     </div>
   </div>
 
-  <div class='main'>
-    <h1>Projects</h1>
-    <p>Sample Projects from Codecademy</p>
-  </div>
+  <% @projects.each do |project| %>
+    <div class='main'>
+    <div class='column'>
+      <div class="image">
+        <img src=<%= project.image %> >
+          <div class="text">
+            <h1> <%= project.title %> </h1>
+            <p> <%= project.description %></p>
+          </div>
+      </div>
+    </div>
+    </div>
+  <% end %>
 </div>
